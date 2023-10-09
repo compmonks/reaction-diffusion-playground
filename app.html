@@ -20,24 +20,6 @@
   <meta name="description" content="Interactive simulation with organic patterns and behaviors emerging naturally from two chemicals as they are mixed together.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Facebook OG -->
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jasonwebb.github.io/reaction-diffusion-playground/">
-  <meta property="og:title" content="Reaction-Diffusion Playground">
-  <meta property="og:image" content="https://raw.githubusercontent.com/jasonwebb/reaction-diffusion-playground/master/images/social-media-preview.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="628">
-  <meta property="og:description" content="Interactive simulation with organic patterns and behaviors emerging naturally from two chemicals as they are mixed together.">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@jasonwebb">
-  <meta name="twitter:title" content="Reaction-Diffusion Playground">
-  <meta name="twitter:description" content="Interactive simulation with organic patterns and behaviors emerging naturally from two chemicals as they are mixed together.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/jasonwebb/reaction-diffusion-playground/master/images/social-media-preview.jpg">
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/map-dialog.css">
   <link rel="stylesheet" href="css/corner-links.css">
@@ -69,9 +51,7 @@
 </head>
 
 <body>
-  <!-- Container that the main ThreeJS canvas gets injected into. -->
-  <div id="container">
-	  <svg version="1.1" width="0" height="0" style="position: absolute;">
+		  <svg version="1.1" width="0" height="0" style="position: absolute;">
   <filter id="Sobel">
     <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="-1,-2,-1,0,0,0,1,2,1" result="V1"></feConvolveMatrix>
     <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="1,2,1,0,0,0,-1,-2,-1" result="V2"></feConvolveMatrix>
@@ -83,7 +63,9 @@
     <feColorMatrix type="saturate" values="0"></feColorMatrix>
   </filter>
 </svg>
-	  
+
+  <!-- Container that the main ThreeJS canvas gets injected into. -->
+  <div id="container">	  
   </div>
 
   <!-- Dialog popup containing parameter map. Bring it up using the "Pick parameter values from map" button on the right pane. -->
