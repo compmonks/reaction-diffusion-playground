@@ -51,18 +51,7 @@
 </head>
 
 <body>
-		  <svg version="1.1" width="0" height="0" style="position: absolute;">
-  <filter id="Sobel">
-    <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="-1,-2,-1,0,0,0,1,2,1" result="V1"></feConvolveMatrix>
-    <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="1,2,1,0,0,0,-1,-2,-1" result="V2"></feConvolveMatrix>
-    <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="-1,0,1,-2,0,2,-1,0,1" result="H1"></feConvolveMatrix>
-    <feConvolveMatrix in="SourceGraphic" preserveAlpha="true" order="3" kernelMatrix="1,0,-1,2,0,-2,1,0,-1" result="H2"></feConvolveMatrix>
-    <feComposite operator="arithmetic" in="V1" in2="V2" k2="1" k3="1" result="V"></feComposite>
-    <feComposite operator="arithmetic" in="H1" in2="H2" k2="1" k3="1" result="H"></feComposite>
-    <feBlend mode="lighten" in="H" in2="V"></feBlend>
-    <feColorMatrix type="saturate" values="0"></feColorMatrix>
-  </filter>
-</svg>
+
 
   <!-- Container that the main ThreeJS canvas gets injected into. -->
   <div id="container">	  
